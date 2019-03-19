@@ -1,0 +1,11 @@
+
+<h1>Home</h1>
+
+<!-- If users has data, then show it here-->
+<ul *ngIf="users">
+  <!-- Iterate through each user in users.data-->
+  <li *ngFor="let user of users.data">
+    <img [src]="user.avatar">
+    <p>{{user.first_name}} {{user.last_name}}</p>
+  </li>
+</ul>
